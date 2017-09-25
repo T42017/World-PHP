@@ -3,9 +3,7 @@
     <head>
     <meta charset="UTF-8">
     </head>
-
-    
-    
+       
     <table>
 <tr><th>Stadens namn</th><th>Landskod</th><th>% utav befolkningen</th>
 <?php
@@ -19,6 +17,5 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	echo '<td>'.$row['Population'].'</td>'; 
 	echo '</tr>';
 }
-    
     ?>
     </table>
