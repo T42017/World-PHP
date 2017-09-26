@@ -7,5 +7,8 @@
 }
 else
 {
-	$stmt = $db->query('SELECT * FROM city ORDER BY population DESC');
+	$stmt = $db->query('SELECT * FROM country ORDER BY population DESC');
 }
+
+
+echo "<td><a href=''>'.$row['CountryName'].'</td>";
