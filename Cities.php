@@ -32,7 +32,7 @@ else
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	echo '<tr>';
     echo '<td>'.$row['Name'].'</td>';
-	echo "<td><a href='?country={$row['CountryCode']}'>{$row['CountryCode']}</a></td>"; 
+	echo "<td><a href='?countryCode={$row['CountryCode']}'>{$row['CountryCode']}</a></td>"; 
 	echo '<td>'.$row['Population'].'</td>'; 
 	echo '</tr>';
 }
