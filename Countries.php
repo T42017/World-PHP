@@ -10,7 +10,7 @@
 
 
 <table>
-<tr><th>Language</th><th>Code</th><th>Population</th>
+<tr><th>Country code</th><th>Country</th><th>Population</th>
 <?php
 
 
