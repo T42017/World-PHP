@@ -5,7 +5,7 @@
     </head>
       
     <table>
-<tr><th>Stadens namn</th><th>Landskod</th><th>Befolkning</th>
+<tr><th>City name</th><th>Country code</th><th>Population</th>
 <?php
    $db = new PDO('mysql:host=localhost;dbname=world;charset=utf8mb4', 'root', ''); 
 $stmt = $db->query('SELECT * FROM City');
