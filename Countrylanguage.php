@@ -1,15 +1,20 @@
 <!DOCTPE html>
 <html>
-    <head>
+<head>
     <meta charset="UTF-8">
-    </head>
-       
-    <table>
+</head>
+    
+<body>
 
+<h1>Language</h1>     
+
+
+<table>
 <tr><th>CountryCode</th><th>Language</th><th>Percentage</th>
 <?php
 
 $db = new PDO('mysql:host=localhost;dbname=world;charset=utf8mb4', 'root', ''); 
+
 $stmt = $db->query('SELECT * FROM countrylanguage');
 
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -19,6 +24,9 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo '<td>'.$row['Percentage'].'</td>';
 	echo '</tr>';
 }
-    ?>
-    </table>
-    
+
+?>
+
+</table>
+</body>
+</html>
