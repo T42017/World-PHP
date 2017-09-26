@@ -1,3 +1,80 @@
-table, th, td {
-    border: 1px solid black;
+html {
+}
+
+body {
+	font-family: Arial Narrow, sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    left: 0px;
+}
+
+th {
+    border: 2px solid black;
+    width: 500px;
+    height: 30px;
+    border-collapse: collapse;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    left: 0px;
+}
+
+td {
+    border-right: 2px solid black;
+    height: 30px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+a.footer {
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+a.index {
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.språk {
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.språk:hover {
+	font-size: 16px;
+	color: #4CAF50;
+	text-decoration: underline;
+}
+
+a {
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #4CAF50;
+	text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
 }
