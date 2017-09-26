@@ -8,7 +8,7 @@
         <br/>
         <br/>
 
-        <a class="index-link" href="./citites.php">
+        <a class="index-link" href="./cities.php">
             Städer
         </a>
         <br/>

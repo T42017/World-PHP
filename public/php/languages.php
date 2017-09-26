@@ -21,14 +21,6 @@
                 $stmt->bindParam(':code', $code);
                 $stmt->execute();
             }
-            /*elseif (isset($_GET["language"]) && !empty($_GET["language"]))
-            {
-            	$stmt = $db->prepare('SELECT Language, CountryCode FROM countrylanguage WHERE Language = :language');
-            	$stmt = $db->prepare('SELECT countrylanguage.Language AS Language, country.Name AS Country FROM countrylanguage, country WHERE countrylanguage.Language = :language AND countrylanguage.CountryCode = country.Code');
-            	$language = strtolower(htmlspecialchars($_GET["language"]));
-            	$stmt->bindParam(':language', $language);
-            	$stmt->execute();
-            }*/
             else 
             {
                 $stmt = $db->query('SELECT countrylanguage.Language as Language, country.Name as Country FROM countrylanguage, country WHERE countrylanguage.CountryCode = country.Code');

@@ -1,10 +1,10 @@
-        <footer>
-            <?php if (!endsWith($_SERVER["REQUEST_URI"], "index.php")): ?>
+        <?php if (!endsWith($_SERVER["REQUEST_URI"], "index.php")): ?>
+            <footer>
                 <a href="index.php">
                     Tillbaka
                 </a>
-            <?php endif; ?>
-        </footer>
+            </footer>
+        <?php endif; ?>
     </body>
 </html>
     
