@@ -1,20 +1,23 @@
 <?php include 'header.php'; ?>
 
-<p>
-    <a href="./countries.php">
-        Länder
-    </a>
-    <br/>
+<div id="index-wrapper">
+    <p id ="index-p">
+        <a class="index-link" href="./countries.php">
+            Länder
+        </a>
+        <br/>
+        <br/>
 
-    <a href="./citites.php">
-        Städer
-    </a>
-    <br/>
+        <a class="index-link" href="./citites.php">
+            Städer
+        </a>
+        <br/>
+        <br/>
 
-    <a href="./languages.php">
-        Språk
-    </a>
-    <br/>
-</p>
+        <a class="index-link" href="./languages.php">
+            Språk
+        </a>
+    </p>
+</div>
 
 <?php include 'footer.php'; ?>

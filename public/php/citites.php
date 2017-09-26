@@ -23,12 +23,12 @@
                 $stmt = $db->prepare('SELECT country.Name AS countryName, city.Name AS cityName, city.Population AS cityPopulation FROM country, city WHERE city.CountryCode = :code AND city.CountryCode = country.Code ORDER BY city.Population DESC');
                 $code = strtolower(htmlspecialchars($_GET["code"]));
                 $stmt->bindParam(':code', $code);
+                $stmt->execute();
             }
             else 
             {
-                $stmt = $db->prepare('SELECT country.Name AS countryName, city.Name AS cityName, city.Population AS cityPopulation FROM country, city WHERE city.CountryCode = country.Code ORDER BY city.Population DESC');
+                $stmt = $db->query('SELECT country.Name AS countryName, city.Name AS cityName, city.Population AS cityPopulation FROM country, city WHERE city.CountryCode = country.Code ORDER BY city.Population DESC');
             }
-            $stmt->execute();
             while($row = $stmt->fetch(PDO::FETCH_ASSOC))
             {
                 echo "<tr class='border'>";

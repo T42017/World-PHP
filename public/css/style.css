@@ -4,19 +4,62 @@ html {
 body {
 }
 
+#index-wrapper {
+	margin: 0 auto;
+	width: 20%;
+	margin-top: 200px;
+}
+
+#index-p {
+	text-align: center;
+	border: 9px solid gray;
+	border-radius: 50px;
+}
+
+.index-link {
+	font-size: 24pt;
+	color: black;
+	text-decoration: none;
+}
+
+a.index-link:hover {
+	color: gray;
+}
+
+.country-language {
+	text-decoration: none;
+	color: #3F3F3F;
+}
+
+a.country-language:hover {
+	color: black;
+}
+
+.back-to-countries-a {
+	font-size: 20pt;
+	text-decoration: none;
+	font-weight: 800px;
+	margin-left: 49%;
+}
+
 table {
-	margin: 4px;
+	margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
 th {
-	border: 2px solid black;
-	text-align: left;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    border-collapse: collapse;
 }
 
-.info { 
-	width: 200px;
-	height: 30px;
-	margin: auto;
+td {
+    border-right: 2px solid black;
+    height: 30px;
+    padding-left: 10px;
+    border-collapse: collapse;
 }
 
 footer {
@@ -27,4 +70,8 @@ footer {
     width: 7%;
     margin-left: 93%;
     overflow:hidden;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
 }

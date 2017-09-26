@@ -1,12 +1,12 @@
-<?php if (!endsWith($_SERVER["REQUEST_URI"], "index.php")): ?>
-<footer>
-            <a href="index.php">
-                Tillbaka
-            </a>
+        <footer>
+            <?php if (!endsWith($_SERVER["REQUEST_URI"], "index.php")): ?>
+                <a href="index.php">
+                    Tillbaka
+                </a>
+            <?php endif; ?>
         </footer>
     </body>
 </html>
-<?php endif; ?>
     
 <?php
     function endsWith($haystack, $needle)
