@@ -1,14 +1,20 @@
 html {
+	height: 100%;
+    margin: 0;
+    background-color: #000000;
 }
 
 body {
 	font-family: Arial Narrow, sans-serif;
 	font-weight: 600;
+	height: 100%;
+    margin: 0;
 }
 
 h1 {
 	font-size: 50px;
 	text-align: center;
+	color: #4CAF50;
 }
 
 table {
@@ -35,7 +41,30 @@ td {
 }
 
 tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: #A9A9A9;
+}
+tr:nth-child(odd) {
+	background-color: #FFFFFF;
+}
+
+#bild {
+	background-image: url(world.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    position: absolute;
+}
+
+.indexlayout {
+	text-align: center;
+	border: 9px solid #4CAF50;
+	border-radius: 50px;
+	width: 30%;
+	margin: auto;
+	margin-top: 15%;
 }
 
 a.footer {
@@ -46,9 +75,14 @@ a.footer {
 }
 
 a.index {
-	font-size: 20px;
+	font-size: 30px;
 	color: #000000;
-	text-decoration: none;
+}
+
+a.index:hover {
+	font-size: 30px;
+	color: #000000;
+	text-decoration: underline;
 }
 
 a.språk {
@@ -65,7 +99,7 @@ a.språk:hover {
 
 a {
 	font-size: 20px;
-	color: #000000;
+	color: #4ACF50;
 	text-decoration: none;
 }
 

@@ -5,7 +5,6 @@
 	</h1>
 	<tr>
 		<th>Språk</th>
-		<th>Land</th>
 	</tr>
 		<?php 
 			$db = new PDO('mysql:host=localhost;dbname=world;charset=utf8mb4', 'root', '');
@@ -18,14 +17,13 @@
 			}
 			else
 			{
-				$stmt = $db->query('SELECT countrylanguage.Language AS Language, country.Name AS Country FROM countrylanguage, country WHERE countrylanguage.CountryCode = country.Code');
+				$stmt = $db->query('SELECT DISTINCT countrylanguage.Language AS Language FROM countrylanguage, country WHERE countrylanguage.CountryCode = country.Code');
 			}
 
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) 
 			{
 				echo "<tr>";
 		   		echo "<td>{$row['Language']}</td>";
-		   		echo "<td>{$row['Country']}</td>";
 				echo "</tr>";
 			}
 		?>
