@@ -10,10 +10,9 @@
     
     <body>
     
-        <h1> Info about all the countries in the world </h1>
+        <h1> Info about all the cities in the world </h1>
         <form action="cities.php" method="GET">
-            <input id="Code" name="Code" type="text" value="" />
-	        <input type="submit" value="Sort by country code" />
+	        <input type="submit" value="See all cities" />
             </form>
         <table>
             
@@ -21,9 +20,16 @@
             
             
             <?php
-            
-            $input = htmlspecialchars($_GET["Code"]);
-            
+
+            if(isset($_GET["Code"])){
+                $input = $_GET["Code"];
+
+            }
+            else{
+
+                $input = null;
+            }
+
             
             $db = new PDO('mysql:host=localhost;dbname=world;charset=utf8mb4','root', '');
             
@@ -33,7 +39,7 @@
                 if($row['CountryCode'] == $input || $input == null){
                     echo"<tr>";
                     echo"<td>{$row['Name']}</td>";
-                    echo"<td>{$row['District']}</td>";
+                    echo"<td><a href='?Code={$row['CountryCode']}'>{$row['CountryCode']}</a></td>";
                     echo"<td>{$row['Population']}</td>";
                     echo "</tr>";
                 }
@@ -43,9 +49,9 @@
             ?>
             
         </table>
-        
-        
-        
+
+
+
         
     </body>   
 </html>
