@@ -24,7 +24,7 @@ include 'header.php';
         </tr>
         
         <?php
-        if (isset($_GET["continent"]) && !empty($_GET["continent"]))
+        if (isset($_GET["continent"]))
         {
             $stmt = $db->prepare('SELECT Name, Continent, Population, Code 
                                   FROM country 

@@ -24,7 +24,7 @@ include 'header.php';
     			?>
     		</th>
     	</tr>
-    	
+
         <?php 
         if (isset($_GET["code"]))
         {
@@ -50,7 +50,7 @@ include 'header.php';
         ?>
     </table>
 
-    <?php if (isset($_GET["code"]) && !empty($_GET["code"])): ?>
+    <?php if (isset($_GET["code"])): ?>
     <a class="back-to-countries-a" href ="./countries.php">
     	←
     </a>
